@@ -140,9 +140,9 @@ export default class TransformableImage extends Component {
 
     DEV && console.log('getImageSize...' + JSON.stringify(source));
 
-    if (typeof Image.getSize === 'function') {
+    if (typeof CachedImage.getSize === 'function') {
       if (source && source.uri) {
-        Image.getSize(
+        CachedImage.getSize(
           source.uri,
           (width, height) => {
             DEV && console.log('getImageSize...width=' + width + ', height=' + height);
