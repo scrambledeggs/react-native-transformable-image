@@ -1,7 +1,7 @@
 'use strict';
 
 import React, { Component, PropTypes } from 'react';
-import { Image } from 'react-native';
+import CachedImage from 'react-native-img-cache';
 
 import ViewTransformer from 'react-native-view-transformer';
 
@@ -99,7 +99,7 @@ export default class TransformableImage extends Component {
         contentAspectRatio={contentAspectRatio}
         onLayout={this.onLayout.bind(this)}
         style={this.props.style}>
-        <Image
+        <CachedImage
           {...this.props}
           style={[this.props.style, {backgroundColor: 'transparent'}]}
           resizeMode={'contain'}
