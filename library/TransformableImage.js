@@ -1,6 +1,7 @@
 'use strict';
 
-import React, { Component, PropTypes } from 'react';
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import { CachedImage } from 'react-native-img-cache';
 
 import ViewTransformer from 'react-native-view-transformer';
